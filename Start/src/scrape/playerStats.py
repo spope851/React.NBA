@@ -7,9 +7,6 @@ import json
 import os
 import time
 
-
-
-
 def plusForSpaceList(l):
     res = []
     for name in l:
@@ -45,8 +42,7 @@ for i in test:
     else:
         print(i.status_code)
         count+=1
-    
-    
+        
 handle = open('playerStats.json', "w")
 json.dump(players, handle, indent=6)
 handle.close()
