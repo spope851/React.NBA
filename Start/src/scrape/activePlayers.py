@@ -24,7 +24,7 @@ def listToString(s):
  
 url = "https://en.hispanosnba.com/players/nba-active/"
 
-FILE = 'playersNames.json'
+FILE = 'playerNames.json'
 
 names = []
 for let in alph:
