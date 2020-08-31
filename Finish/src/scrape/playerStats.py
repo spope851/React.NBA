@@ -7,16 +7,13 @@ import json
 import os
 import time
 
-
-
-
 def plusForSpaceList(l):
     res = []
     for name in l:
         res.append(name.replace(' ','+'))
     return res
 
-FILE='playersNames.json'
+FILE='playerNames.json'
 with open(FILE) as data:    
     names = json.load(data)
     
@@ -25,6 +22,7 @@ apiNames=plusForSpaceList(names)
 players=[]
 count=0
 test=[]
+
 for name in apiNames:
     r=requests.get(url+name)
     print(r)
